@@ -1,0 +1,23 @@
+
+{
+  "manifest_version": 3,
+  "name": "Confusion Matrix Metrics",
+  "version": "2.0",
+  "description": "Calculate metrics from confusion matrix",
+  "permissions": ["activeTab", "storage"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';",
+    "sandbox": "sandbox allow-scripts allow-forms allow-popups allow-modals; script-src 'self' 'unsafe-inline' 'unsafe-eval'; child-src 'self';"
+  }
+}

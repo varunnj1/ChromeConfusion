@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <title>Confusion Matrix Metrics</title>
+</head>
+<h1>Confusion Matrix Metrics</h1>
+
+<body>
+  <div id="content">
+    <form id="confusionForm">
+    <label>True Positive (TP):</label>
+    <input type="number" id="tp" />
+
+    <label>False Positive (FP):</label>
+    <input type="number" id="fp" />
+
+    <label>False Negative (FN):</label>
+    <input type="number" id="fn" />
+
+    <label>True Negative (TN):</label>
+    <input type="number" id="tn" />
+  </form>
+
+    <button id="calculateButton">Calculate Metrics</button>
+    <button id="resetButton">Reset Values</button>
+
+    <div id="results">
+      <label>Specificity:</label>
+      <span id="specificity">0.0000</span>
+
+      <label>Sensitivity:</label>
+      <span id="sensitivity">0.0000</span>
+
+      <label>Precision:</label>
+      <span id="precision">0.0000</span>
+
+      <label>Accuracy:</label>
+      <span id="accuracy">0.0000</span>
+
+      <label>F1 Score:</label>
+      <span id="f1Score">0.0000</span>
+
+      <label>Negative Rate:</label>
+      <span id="negativeRate">0.0000</span>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
